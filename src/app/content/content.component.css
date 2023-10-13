@@ -1,0 +1,52 @@
+/* Styling Content */
+.content {
+  margin-left: 250px; /* Menyesuaikan lebar sidebar */
+  padding: 20px;
+  overflow: auto; /* Untuk scrolling jika konten melebihi layar */
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Penting agar lebar kolom tetap sama */
+}
+
+.content th, .content td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word; /* Memastikan teks yang panjang akan dibungkus */
+}
+
+.content th {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0; /* Membuat header tetap di atas */
+}
+
+.content tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.content tr:hover {
+  background-color: #ddd;
+}
+
+.content button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background-color: #555;
+}
+
+.content .actions th {
+  position: sticky;
+  top: 0; /* Membuat baris aksi tetap di atas */
+  background-color: #333;
+}
